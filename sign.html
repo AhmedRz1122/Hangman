@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="website icon" type="image/png" href="Super_Mario_Run_app.webp">
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <!-- Audio tag for Zombie.mp3 -->
+    <audio id="myAudio" loop autoplay >
+        <source src="Zombie.mp3" type="audio/mpeg">
+        
+    </audio>
+    <script>
+        window.addEventListener('load', () => {
+            const audio = document.getElementById("myAudio");
+            audio.play();
+            audio.load();
+        });
+    </script>
+<!-- end of Audio tag    -->
+    <h1 class="heading-1">Hangman Game Using Javascript</h1>
+    <div class="login-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div id="name">
+                        <label for="name-box">Name</label>
+                        <input type="text" id="name-box">
+                    </div>
+                    <div id="select">
+                        <label for="level">Select Level</label>
+                        <select name="Hangman-level" id="level">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                    <button id="btn" onclick="startGame()">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            const level = document.getElementById('level').value;
+            localStorage.setItem('difficulty', level);
+            window.location.href = 'hangman.html';
+        }
+    </script>
+    <!-- <audio src="Zombie.mp3" loop autoplay></audio> -->
+    
+    
+</body>
+</html>

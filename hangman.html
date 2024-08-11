@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman JS</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="website icon" type="image/png" href="Super_Mario_Run_app.webp">
+</head>
+<body>
+
+    <div class="border-box">
+    <div id="P">
+        <div class="container"></div>
+    </div>
+
+    <div class="circle"></div>
+    <div class="bod"></div>
+    <div id="leftarm"></div>
+    <div id="rightarm"></div>
+    <div id="leftleg"></div>
+    <div id="rightleg"></div>
+
+    <div id="status">
+        <div id="correct">
+            <label for="correct-input">Correct</label>
+            <input type="number" id="correct-input" readonly>
+        </div>
+
+        <div id="uncorrect">
+            <label for="uncorrect-input">Incorrect</label>
+            <input type="number" id="uncorrect-input" readonly>
+        </div>
+    </div>
+    
+
+<div class="box-message">
+    <div id="word-container"></div>
+    
+    <div id="input-container">
+        <label for="guess-input">Guess a letter: </label>
+        <input type="text" id="guess-input" maxlength="1">
+        <button onclick="guessLetter()">Guess</button>
+    </div>
+    
+    <div id="message"></div>
+</div>
+    <script>
+        let correctCount = 0;
+        let incorrectCount = 0;
+
+        function updateCount() {
+            document.getElementById("correct-input").value = correctCount;
+            document.getElementById("uncorrect-input").value = incorrectCount;
+        }
+
+        function guessLetter() {
+            const guessInput = document.getElementById("guess-input");
+            const guess = guessInput.value.toLowerCase();
+            guessInput.value = "";
+
+            if (guess) {
+                
+                const correctLetters = ['a', 'e', 'i', 'o', 'u']; 
+
+                if (correctLetters.includes(guess)) {
+                    correctCount++;
+                } else {
+                    incorrectCount++;
+                }
+                updateCount();
+            }
+        }
+    </script>
+
+<!-- tracking each alphabet that is input during the game scenario -->
+<div class="tracker">
+    <button class="track-btn" onclick="tracker('A')">A</button>
+    <button class="track-btn" onclick="tracker('B')">B</button>
+    <button class="track-btn" onclick="tracker('C')">C</button>
+    <button class="track-btn" onclick="tracker('D')">D</button>
+    <button class="track-btn" onclick="tracker('E')">E</button>
+    <button class="track-btn" onclick="tracker('F')">F</button>
+    <button class="track-btn" onclick="tracker('G')">G</button>
+    <button class="track-btn" onclick="tracker('H')">H</button>
+    <button class="track-btn" onclick="tracker('I')">I</button>
+    <button class="track-btn" onclick="tracker('J')">J</button>
+    <button class="track-btn" onclick="tracker('K')">K</button>
+    <button class="track-btn" onclick="tracker('L')">L</button>
+    <button class="track-btn" onclick="tracker('M')">M</button>
+    <button class="track-btn" onclick="tracker('N')">N</button>
+    <button class="track-btn" onclick="tracker('O')">O</button>
+    <button class="track-btn" onclick="tracker('P')">P</button>
+    <button class="track-btn" onclick="tracker('Q')">Q</button>
+    <button class="track-btn" onclick="tracker('R')">R</button>
+    <button class="track-btn" onclick="tracker('S')">S</button>
+    <button class="track-btn" onclick="tracker('T')">T</button>
+    <button class="track-btn" onclick="tracker('U')">U</button>
+    <button class="track-btn" onclick="tracker('V')">V</button>
+    <button class="track-btn" onclick="tracker('W')">W</button>
+    <button class="track-btn" onclick="tracker('X')">X</button>
+    <button class="track-btn" onclick="tracker('Y')">Y</button>
+    <button class="track-btn" onclick="tracker('Z')">Z</button>
+</div>
+
+<button class="Replay" onclick="replay()"></button>
+
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html>

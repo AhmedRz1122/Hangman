@@ -1,0 +1,243 @@
+body{
+  
+    background-image: url(Main-Area.jpg);
+    color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+  }
+  .heading{
+    text-align: center;
+  }
+  .container{
+    height: 400px;
+    width: 250px;
+    border: 3px solid burlywood;
+    text-align: center;
+    position: relative;
+    right: 79px;
+  }
+  .container ul{
+    
+      list-style-type: none;
+    
+    
+  }
+  
+  
+  
+  
+  #D{
+    position: relative;
+    left: 638px;
+  }
+  #P{
+    position: absolute;
+    top: 172px;
+    right: 94px;
+  }
+  /* Body area CSS */
+  .bod{
+    height: 80px;
+    width: 100px;
+    background-color: burlywood;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 351px;
+    left: 632px;
+    
+  }
+  /* head area in CSS */
+  .circle{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid burlywood; */
+    background-color: burlywood;
+    border-radius: 50%;
+    position: absolute;
+    top: 241px;
+    left: 632px;
+  }
+  /* left arm CSS */
+  #leftarm{
+    height: 100px;
+    width: 20px;
+    background-color: brown;
+    position: absolute;
+    top: 340px;
+    left: 614px;
+    transform: rotate(35deg);
+  }
+  /* left leg CSS */
+  #leftleg{
+    height: 100px;
+    width: 20px;
+    background-color: cyan;
+    position: absolute;
+    top: 419px;
+    left: 619px;
+    transform: rotate(35deg);
+  }
+  /* right arm in CSS */
+  #rightarm{
+    height: 100px;
+    width: 20px;
+    background-color: brown;
+    position: absolute;
+    top: 341px;
+    left: 733px;
+    transform: rotate(-35deg);
+  }
+  /* right leg in CSS */
+  #rightleg
+  {
+    height: 100px;
+    width: 20px;
+    background-color: cyan;
+    position: absolute;
+    top: 420px;
+    left: 727px;
+    transform: rotate(-35deg);
+  }
+  
+  /* input id 1*/
+  #input1{
+    height: 21px;
+    border: 2px solid red;
+    color: red;
+    text-align: center;
+  }
+  #input1:hover{
+    border: 2px solid cyan;
+  }
+  
+  /* input id 2 */
+  #input2{
+    height: 21px;
+    border: 2px solid red;
+    color: black;
+   font-size: 15px;
+   text-align: center;
+  }
+  #input2:hover{
+    border: 2px solid cyan;
+  }
+  
+  /* input id 3 */
+  #input3{
+    height: 21px;
+    border: 2px solid red;
+    color: black;
+   font-size: 15px;
+   text-align: center;
+  }
+  #input3:hover{
+    border: 2px solid cyan;
+  }
+  
+  /* Status for showing the number of correction and uncorrect word in the hangman */
+  #status{
+    height: 90px;
+    width: 530px;
+    border: 2px solid burlywood;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 25px;
+    right: 13px;
+
+  }
+  /* Size of the font in the status box */
+  #correct>label{
+    font-size: 20px;
+  }
+  #correct>input{
+    font-size: 20px;
+  }
+  #uncorrect>label{
+    font-size: 20px;
+  }
+  #uncorrect>input{
+    font-size: 20px;
+  }
+  
+  .box-message{
+    height: 100px;
+    width: 400px;
+    border: 2px solid burlywood;
+    position: relative;
+    top: 19px;
+    left: 14px;
+  }
+  /* tracking the aplhabets in CSS */
+  .tracker{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal size */
+    grid-gap: 2px; /* spacing between grid items */
+    justify-content: start; /* Align grid to the left */
+    align-content: end; /* Align grid to the bottom */
+    height: 70%;
+    padding-left: 10px; /* Padding to not stick to the very edge */
+    width: 10px;
+    position: relative;
+    top: -125px;
+    left: 107px;
+    
+}
+
+.track-btn{
+    line-height: 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    border: 2px solid black;
+    background-color: white;
+    width: 100%; /* Full width within the grid column */
+    box-sizing: border-box; /* Include padding and border in the width */
+
+}
+/* CSS for the Replay Button */
+.Replay{
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: red;
+  color: black;
+  border: 2px solid burlywood;
+  background-image: url(Replay_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  bottom: 55px;
+  left: 388px;
+}
+.Replay:hover{
+  border: 2px solid white;
+  cursor: pointer;
+
+}
+.border-box
+{
+  height: 610px;
+  width: 977px;
+  border: 10px solid;
+  border-radius: 20px;
+ position: relative;
+ left: 312px;
+  border-image-slice: 1;
+  animation: gradientAnimation 3s infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+      border-image-source: linear-gradient(45deg, red, yellow);
+  }
+  50% {
+      border-image-source: linear-gradient(45deg, yellow, green);
+  }
+  100% {
+      border-image-source: linear-gradient(45deg, green, red);
+  }
+}
