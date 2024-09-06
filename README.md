@@ -18,3 +18,10 @@ This classic Hangman game is built using JavaScript, HTML, and CSS. The game cha
 # Disclaimer! 
 
 This is my first solo project which I had created to test my coding skill and its complete beginner project like first semester students of Computer Science,Information technology, and Software Engineering etc.
+
+# Demo video for Hangman game:
+
+
+https://github.com/user-attachments/assets/b7cfd4b2-472a-479a-bf5f-b329d6905153
+
+
