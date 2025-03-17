@@ -3,8 +3,6 @@
 
 This classic Hangman game is built using JavaScript, HTML, and CSS. The game challenges players to guess a hidden word by suggesting letters within a certain number of attempts. It provides an interactive and engaging experience with a simple and user-friendly interface. 
 
- Features Responsive Design: The game is designed to work seamlessly on both desktop and mobile devices. 
-
  Dynamic Word Selection: Words are randomly selected from a predefined list for each game session. Visual Feedback: Incorrect guesses are visually represented, and the hangman figure is drawn step-by-step.
 
  Keyboard Input: Players can use the on-screen or physical keyboard for input. Retry Option: Players can start a new game after finishing the current one. Technologies Used JavaScript: Game logic and interactivity. 
@@ -17,7 +15,7 @@ This classic Hangman game is built using JavaScript, HTML, and CSS. The game cha
 
 # Disclaimer! 
 
-This is my first solo project which I had created to test my coding skill and its complete beginner project like first semester students of Computer Science,Information technology, and Software Engineering etc.
+This is my first solo project which I had created to test my coding skills and it's a complete beginner project like first semester students of Computer Science, Information Technology, Software Engineering, etc.
 
 # Demo video for Hangman game:(A sound track is also added at the beginning of the Game)
 
